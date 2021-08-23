@@ -58,11 +58,11 @@ const useStyles = makeStyles({
      const test = (label) =>{
         return Math.abs(Number(label)) >= 1.0e+9
         ? Math.abs(Number(label)) / 1.0e+9 + "B"
-    // Six Zeroes for Millions 
+     
     : Math.abs(Number(label)) >= 1.0e+6
 
     ? Math.abs(Number(label)) / 1.0e+6 + "M"
-    // Three Zeroes for Thousands
+    
     : Math.abs(Number(label)) >= 1.0e+3
 
     ? Math.abs(Number(label)) / 1.0e+3 + "K"
